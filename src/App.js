@@ -26,7 +26,6 @@ class App extends Component {
     if (count <= 0) {
       this.setState({ winner: this.state.player, game: 0 });
     }
-    await sleep(500);
     this.setState({ count });
     if (this.state.player === 'Player 1') {
       this.setState({ player: 'Player 2' });
